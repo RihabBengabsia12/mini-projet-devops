@@ -1,0 +1,22 @@
+# Utilise une image de base Python
+FROM python:3.9-slim
+
+# Définit le répertoire de travail
+WORKDIR /app
+
+# Copie le fichier requirements.txt dans l'image
+COPY requirements.txt /app/
+
+# Installe les dépendances
+RUN pip install -r requirements.txt
+
+# Copie le code de ton application dans l'image
+COPY . /app/
+
+# Expose le port que ton application utilisera
+EXPOSE 5000
+
+# Commande pour démarrer ton application
+CMD ["python", "app.py"]
+
+

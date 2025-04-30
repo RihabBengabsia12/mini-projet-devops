@@ -1,0 +1,10 @@
+flask==2.0.3
+werkzeug==2.0.3
+flask_sqlalchemy==2.5.1
+sqlalchemy==1.4.46
+psycopg2-binary==2.9.9
+flask_jwt_extended
+kafka-python
+python-dotenv
+
+
